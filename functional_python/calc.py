@@ -1,0 +1,37 @@
+"""Main module."""
+
+from functools import reduce
+
+
+class Calc:
+    def add(self, *args):
+        return sum(args)
+
+    def sub(self, a, b):
+        return a - b
+
+    def mul(self, *args):
+        if not all(args):
+            raise ValueError
+
+        return reduce(lambda x, y: x*y, args)
+
+    def div(self, a, b):
+        try:
+            return a / b
+        except ZeroDivisionError:
+            return "inf"
+
+    def avg(self, it, lower_threshold=None, upper_threshold=None):
+        _it = it[:]
+
+        if lower_threshold is not None:
+            _it = [x for x in _it if x >= lower_threshold]
+
+        if upper_threshold is not None:
+            _it = [x for x in _it if x <= upper_threshold]
+
+        if not len(_it):
+            return 0
+
+        return sum(_it)/len(_it)
