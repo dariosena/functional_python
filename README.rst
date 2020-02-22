@@ -1,5 +1,5 @@
 ====
-calc
+Functional Python
 ====
 
 
@@ -14,19 +14,7 @@ calc
         :alt: Documentation Status
 
 
-
-
-A simple project to learn clean architecture.
-
-
-* Free software: MIT license
-* Documentation: https://calc.readthedocs.io.
-
-
-Features
---------
-
-* TODO
+A simple project to learn clean architecture and functional python.
 
 Credits
 -------

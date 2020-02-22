@@ -43,7 +43,7 @@ setup(
     include_package_data=True,
     keywords='functional_python',
     name='functional_python',
-    packages=find_packages(include=['calc', 'calc.*']),
+    packages=find_packages(include=['src', 'src.*']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

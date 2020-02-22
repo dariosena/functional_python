@@ -1,6 +1,6 @@
 import pytest
 
-from functional_python.src import Calc
+from src.calc import Calc
 
 
 def test_add_two_numbers():
